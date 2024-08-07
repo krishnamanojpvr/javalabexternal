@@ -22,6 +22,6 @@ public class exp3a{
             }
         }
         System.out.println("The maximum difference between any two elements of the array is: "+(max-min));
+        s.close();
     }
-    
 }

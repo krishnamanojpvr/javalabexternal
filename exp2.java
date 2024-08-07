@@ -1,4 +1,4 @@
-// A resistor is a circuit device designed to provide a specific resistance between its two ends. 
+// 2  A resistor is a circuit device designed to provide a specific resistance between its two ends. 
 // Resistance is expressed in ohms (Ω) or kilo-ohms (kΩ). Resistors are usually marked with coloured 
 // bands that encode their resistance, as shown in figure 1 below. The first two bands represent digits 
 // and the third is a power-of-ten multiplier.

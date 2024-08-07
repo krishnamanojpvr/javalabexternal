@@ -1,4 +1,4 @@
-/*Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+/*3c. Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 Examples: 
 Input: arr[]   = {3, 0, 0, 2, 0, 4}
 Output: 10
@@ -45,6 +45,7 @@ public static void main(String[] args)
         arr[i]=sc.nextInt();
 	
 	System.out.print(maxWater(arr,n));
+	sc.close();
 }
 }
 

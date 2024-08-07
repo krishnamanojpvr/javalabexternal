@@ -13,6 +13,7 @@ public class exp9a {
         Map<Character, Integer> result = new HashMap<Character, Integer>();
         result = fCount(str);
         System.out.println(result);
+        sc.close();
     }
 
     public static Map<Character, Integer> fCount(String str) {
@@ -23,4 +24,5 @@ public class exp9a {
         }
         return map;
     }
+
 }

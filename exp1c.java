@@ -1,4 +1,4 @@
-// c. Cricketer's Pension Continuing our journey in mastering the conditional statements & our interest with 
+// 1c. Cricketer's Pension Continuing our journey in mastering the conditional statements & our interest with 
 // cricket.
 // Let us help the Indian cricket's governing body (BCCI) to automate its plan of allotting pensions to 
 // former players. 
@@ -51,5 +51,6 @@ public class exp1c {
             System.out.println("Amount: " + amount);
             System.exit(100);
         }
+        s.close();
     }
 }

@@ -13,5 +13,6 @@ public class exp1a {
                 }
             }
         }
+        s.close();
     }
 }

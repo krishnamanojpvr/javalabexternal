@@ -1,17 +1,17 @@
-// c. You are given a string S of alphabet characters and the task is to find its matching decimal 
+
+// 4c. You are given a string S of alphabet characters and the task is to find its matching decimal 
 // representation as on the shown keypad. Output the decimal representation corresponding to the string. 
 // For ex: if you are given “amazon” then its corresponding decimal representation will be 262966.
 import java.util.*;
-import java.io.*;
+
 public class exp4c {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string: ");
         String s = sc.next();
-        char[] ch = new char[s.length()];
-        for(int i=0;i<s.length();i++){
-            ch[i] = s.charAt(i);
-            switch (ch[i]) {
+
+        for (int i = 0; i < s.length(); i++) {
+            switch (s.charAt(i)) {
                 case 'a':
                 case 'b':
                 case 'c':
@@ -59,6 +59,7 @@ public class exp4c {
                     break;
             }
         }
-       
+        sc.close();
+
     }
 }

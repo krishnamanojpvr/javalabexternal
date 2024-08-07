@@ -25,6 +25,7 @@ public class exp4a{
             }
         }
         System.out.println("The length of the longest common subsequence is: "+c);
+        sc.close();
 
     }
 }

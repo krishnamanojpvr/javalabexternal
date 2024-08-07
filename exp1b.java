@@ -1,4 +1,4 @@
-// b. Write a java program to check whether the given number is gapful or not.
+// 1b. Write a java program to check whether the given number is gapful or not.
 // A number is gapful if it is at least 3 digits long and is divisible by the number formed by stringing the 
 // first and last numbers together. The smallest number that fits this description is 100. First digit is 1, last 
 // digit is 0, forming 10, which is a factor of 100. Therefore, 100 is gapful. Print “Yes” if it is gapful 
@@ -21,5 +21,6 @@ public class exp1b {
         } else {
             System.out.println("No");
         }
+        s.close();
     }
 }

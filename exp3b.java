@@ -1,4 +1,4 @@
-// b. Write a Java program to fill the below pattern into a square matrix:
+// 3b. Write a Java program to fill the below pattern into a square matrix:
 // The matrix has to be filled with numbers starting from 1. It has to start fill first row last column, last row 
 // (reverse), first column (reverse) and so on. Please refer the following example 
 // input = 5
@@ -63,5 +63,6 @@ public class exp3b {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

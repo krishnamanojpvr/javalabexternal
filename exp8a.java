@@ -1,5 +1,5 @@
 
-/*8. a. Write a java program to store the employee details in an ArrayList and display the employee
+/*8.a. Write a java program to store the employee details in an ArrayList and display the employee
 details in ascending order of their experience. Create 'Employee' class with two instance variables
 Employee name and Employee experience (no. of years).*/
 import java.util.*;

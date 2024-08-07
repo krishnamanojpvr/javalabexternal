@@ -1,5 +1,5 @@
 
-// b. You have created a web-based survey of favorite programming languages and are capturing the 
+// 6b. You have created a web-based survey of favorite programming languages and are capturing the 
 // results into a text file named “logfile”. The structure of the text file is:
 // For example, here is a sample logfile of six entries:
 // The logfile is ordered by increasing timestamp. You are concerned that some people are voting 
@@ -62,8 +62,10 @@ public class exp6b {
             votes.put(d.plang, x);
         }
         Set<Map.Entry<String, Integer>> s1 = votes.entrySet();
-        for (Map.Entry e : s1) {
+        for (Map.Entry<String, Integer> e : s1) {
             System.out.println(e.getKey() + " " + e.getValue());
         }
+        sc.close();
     }
+
 }

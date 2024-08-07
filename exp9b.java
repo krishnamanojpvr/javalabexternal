@@ -1,5 +1,5 @@
 
-/*b. When working with HashMaps, sometimes cases arise where we wish to determine if two
+/*9b. When working with HashMaps, sometimes cases arise where we wish to determine if two
 HashMaps have any key/value pairs in common. For example, we might have the following two
 Hashmaps (named hashmap1 and hashmap2, respectively) that map from String to String (i.e.,
 their type is HashMap) and we want to count how many key/value pairs they have in
@@ -14,25 +14,25 @@ import java.util.*;
 
 public class exp9b {
     public static void main(String args[]) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         HashMap<String, String> mapOne = new HashMap<String, String>();
         HashMap<String, String> mapTwo = new HashMap<String, String>();
         System.out.print("Enter how many pairs in HashMap 1 : ");
-        int mapOneSize = input.nextInt();
-        input.nextLine();
+        int mapOneSize = sc.nextInt();
+        sc.nextLine();
         System.out.println("Enter your " + mapOneSize + " pair of String ");
         for (int i = 0; i < mapOneSize; i++) {
             System.out.println("Enter Pair " + (i + 1));
-            String pairs[] = input.nextLine().split(" ");
+            String pairs[] = sc.nextLine().split(" ");
             mapOne.put(pairs[0], pairs[1]);
         }
         System.out.print("Enter how many pairs in HashMap 2 : ");
-        int mapTwoSize = input.nextInt();
-        input.nextLine();
+        int mapTwoSize = sc.nextInt();
+        sc.nextLine();
         System.out.println("Enter your " + mapTwoSize + " pair of String ");
         for (int i = 0; i < mapTwoSize; i++) {
             System.out.println("Enter Pair " + (i + 1));
-            String pairs[] = input.nextLine().split(" ");
+            String pairs[] = sc.nextLine().split(" ");
             mapTwo.put(pairs[0], pairs[1]);
         }
         int count = 0;
@@ -44,5 +44,6 @@ public class exp9b {
             }
         }
         System.out.println("The number of key/value pairs are : " + count);
+        sc.close();
     }
 }

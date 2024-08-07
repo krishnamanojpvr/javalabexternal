@@ -16,8 +16,11 @@ public class exp7a {
         try {
             if (n > 0)
                 arr = new int[n];
-            else
+            else {
+                sc.close();
                 throw new IllegalArgumentException();
+            }
+
             System.out.println("Enter Array Elements: ");
             for (int i = 0; i < n; i++) {
                 arr[i] = sc.nextInt();
@@ -28,6 +31,7 @@ public class exp7a {
         } catch (IllegalArgumentException e) {
             System.out.println("Invalid Argument");
         }
+        sc.close();
     }
 
     int[] addition(int[] a) {

@@ -4,34 +4,35 @@
 // table.
 import java.util.*;
 import java.io.*;
-public class exp6a{
+
+public class exp6a {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         FileReader fr = new FileReader("phonenumber.txt");
         BufferedReader br = new BufferedReader(fr);
         Hashtable<String, String> ht = new Hashtable<>();
         String line;
-        while((line = br.readLine()) != null){
+        while ((line = br.readLine()) != null) {
             String[] data = line.split("\s");
             ht.put(data[0], data[1]);
         }
         System.out.println(ht);
         System.out.print("Enter name or phone number: ");
         String input = sc.nextLine();
-        if(ht.containsKey(input)){
+        if (ht.containsKey(input)) {
             System.out.println("Name: " + input + "\nPhone Number: " + ht.get(input));
-        }else if(ht.containsValue(input)){
-            for(Map.Entry<String, String> entry : ht.entrySet()){
-                if(entry.getValue().equals(input)){
+        } else if (ht.containsValue(input)) {
+            for (Map.Entry<String, String> entry : ht.entrySet()) {
+                if (entry.getValue().equals(input)) {
                     System.out.println("Name: " + entry.getKey() + "\nPhone Number: " + input);
                     break;
                 }
             }
-        }else{
+        } else {
             System.out.println("No such name or phone number found in the file.");
         }
         sc.close();
         br.close();
-        
+
     }
 }

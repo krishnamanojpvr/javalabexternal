@@ -1,5 +1,5 @@
 /*
- b. Demonstrate with a Java program(use JDBC) to display all the employees who are working in
+ 10b. Demonstrate with a Java program(use JDBC) to display all the employees who are working in
 "Dallas" in ascending order of their names.
 Given Employee & Department Schema.emp schema;
 +-----------+---------------+------+-----+---------+-------+
@@ -58,11 +58,11 @@ public class exp10b {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost/test", "student", "student");
             Statement stmt = con.createStatement();
-            String location = "Dallas";
+            // String location = "Dallas";
             String sql = "select ename from emp e, dept d where e.deptno=d.deptno and location = 'Dallas'";
             ResultSet rs = stmt.executeQuery(sql);
             ResultSetMetaData rsmd = rs.getMetaData();
-            int columnsNumber = rsmd.getColumnCount();
+            // int columnsNumber = rsmd.getColumnCount();
             System.out.println("");
             int numberOfColumns = rsmd.getColumnCount();
             for (int i = 1; i <= numberOfColumns; i++) {

@@ -1,5 +1,5 @@
 
-/*c. Demonstrate with a Java program(use JDBC) to read three values dept no,dept name and
+/*10c. Demonstrate with a Java program(use JDBC) to read three values dept no,dept name and
 location from the user and insert the corresponding record into the dept table.
 Given Department Schema.
 Hint: use Prepared Statement.+----------+-------------+------+-----+---------+-------+

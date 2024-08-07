@@ -1,5 +1,5 @@
 /*
- * 10. a. Demonstrate with a Java Program (using JDBC) to display all the employees who are
+10. a. Demonstrate with a Java Program (using JDBC) to display all the employees who are
 working in the given department. Read department number from the user. Also display records in
 the ascending order of "employee name".
 Given Employee Schema.
